@@ -1,0 +1,8 @@
+body {
+  background: pink
+}
+.img {
+  background: url(../img/1.png);
+  width: 960px;
+  height: 867px;
+}
