@@ -47,6 +47,20 @@ module.exports = {
           }
         ],
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: extractTextPlugin.extract({
+          use: [
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "sass-loader"
+            }
+          ],
+          fallback: "style-loader"
+        })
       }
     ]
   },
